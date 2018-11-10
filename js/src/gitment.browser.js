@@ -4031,11 +4031,10 @@ var Query = exports.Query = {
 };
 
 function ajaxFactory(method) {
-  var need_accept_header = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : true;
-
   return function (apiPath) {
     var data = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
     var base = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : 'https://api.github.com';
+    var need_accept_header = arguments.length > 3 && arguments[3] !== undefined ? arguments[3] : true;
 
     var req = new XMLHttpRequest();
     var token = localStorage.getItem(_constants.LS_ACCESS_TOKEN_KEY);
@@ -4264,7 +4263,7 @@ var Gitment = function () {
         code: code,
         redirect_uri: redirect_uri
 
-      }, '').then(function (data) {
+      }, '', false).then(function (data) {
         var params = new URLSearchParams(data);
         var accessToken = params.get('access_token');
         console.log("xfguo: got the accessToken = " + accessToken + ", and corresponding data = " + data);
