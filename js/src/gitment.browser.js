@@ -4261,9 +4261,10 @@ var Gitment = function () {
         redirect_uri: redirect_uri
 
       }, '').then(function (data) {
-        console.log("xfguo: got the accessToken = " + data.access_token);
-        var jdata = JSON.parse('{' + data + '}');
-        _this.accessToken = jdata.access_token;
+        var params = new URLSearchParams(data);
+        var accessToken = params.get('access_token');
+        console.log("xfguo: got the accessToken = " + accessToken + ", and corresponding data = " + data);
+        _this.accessToken = accessToken;
         console.log("xfguo: to update comments");
         _this.update();
       }).catch(function (e) {
