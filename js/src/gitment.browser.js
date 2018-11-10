@@ -4068,7 +4068,7 @@ function ajaxFactory(method) {
     req.open(method, url, true);
 
     if (need_accept_header) {
-      req.setRequestHeader('Accept', 'application/vnd.github.squirrel-girl-preview, application/vnd.github.html+json');
+      req.setRequestHeader('Accept', 'application/vnd.github.squirrel-girl-preview+json, application/vnd.github.html+json');
     }
     if (token) {
       req.setRequestHeader('Authorization', 'token ' + token);
