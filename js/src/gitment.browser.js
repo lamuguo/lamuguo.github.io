@@ -4163,9 +4163,12 @@ var Gitment = function () {
   _createClass(Gitment, [{
     key: 'accessToken',
     get: function get() {
-      return localStorage.getItem(_constants.LS_ACCESS_TOKEN_KEY);
+      token = localStorage.getItem(_constants.LS_ACCESS_TOKEN_KEY);
+      console.log("xfguo: get accessToken = " + token);
+      return token;
     },
     set: function set(token) {
+      console.log("xfguo: set accessToken = " + token);
       localStorage.setItem(_constants.LS_ACCESS_TOKEN_KEY, token);
     }
   }, {
@@ -4260,6 +4263,7 @@ var Gitment = function () {
       }, '').then(function (data) {
         _this.accessToken = data.access_token;
         _this.update();
+        console.log("xfguo: got the accessToken = " + _this.accessToken);
       }).catch(function (e) {
         _this.state.user.isLoggingIn = false;
         alert(e);
