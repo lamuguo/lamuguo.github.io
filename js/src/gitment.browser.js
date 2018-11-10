@@ -4163,7 +4163,7 @@ var Gitment = function () {
   _createClass(Gitment, [{
     key: 'accessToken',
     get: function get() {
-      var token = localStorage.getItem(_constants.LS_ACCESS_TOKEN_KEY, '');
+      var token = localStorage.getItem(_constants.LS_ACCESS_TOKEN_KEY, null);
       console.log("xfguo: get accessToken = " + token);
       return token;
     },
