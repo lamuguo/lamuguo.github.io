@@ -4249,6 +4249,8 @@ var Gitment = function () {
       this.state.user.isLoggingIn = true;
 
       var redirect_uri = this.oauth.redirect_uri || window.location.href;
+      console.log("xfguo: redirect_uri: " + redirect_uri + ", this.oauth.redirect_uri = " + this.oauth.redirect_uri);
+
       _utils.http.post('https://cors-anywhere.herokuapp.com/https://github.com/login/oauth/access_token', {
         client_id: client_id,
         client_secret: client_secret,
