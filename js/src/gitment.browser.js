@@ -4031,6 +4031,8 @@ var Query = exports.Query = {
 };
 
 function ajaxFactory(method) {
+  var need_accept_header = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : true;
+
   return function (apiPath) {
     var data = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
     var base = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : 'https://api.github.com';
@@ -4065,7 +4067,9 @@ function ajaxFactory(method) {
     });
     req.open(method, url, true);
 
-    // req.setRequestHeader('Accept', 'application/vnd.github.squirrel-girl-preview, application/vnd.github.html+json')
+    if (need_accept_header) {
+      req.setRequestHeader('Accept', 'application/vnd.github.squirrel-girl-preview, application/vnd.github.html+json');
+    }
     if (token) {
       req.setRequestHeader('Authorization', 'token ' + token);
     }
