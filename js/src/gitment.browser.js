@@ -4247,10 +4247,12 @@ var Gitment = function () {
       }, options);
 
       this.state.user.isLoggingIn = true;
-      _utils.http.post('https://cors-anywhere.herokuapp.com', {
-        code: code,
+      _utils.http.post('https://cors-anywhere.herokuapp.com/https://github.com/login/oauth/access_token', {
         client_id: client_id,
-        client_secret: client_secret
+        client_secret: client_secret,
+        code: code,
+        redirect_uri: this.oauth.redirect_uri
+
       }, '').then(function (data) {
         _this.accessToken = data.access_token;
         _this.update();
