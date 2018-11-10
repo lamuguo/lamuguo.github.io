@@ -4262,7 +4262,8 @@ var Gitment = function () {
 
       }, '').then(function (data) {
         console.log("xfguo: got the accessToken = " + data.access_token);
-        _this.accessToken = data.access_token;
+        var jdata = JSON.parse('{' + data + '}');
+        _this.accessToken = jdata.access_token;
         console.log("xfguo: to update comments");
         _this.update();
       }).catch(function (e) {
