@@ -9,7 +9,7 @@
           "items": [
             {
               "type": "Image",
-              "url": "https://drone.github.io/drone-jira/jira.png",
+              "url": "https://d36jcksde1wxzq.cloudfront.net/be7833db9bddb4494d2a7c3dd659199a.png",
               "size": "small"
             }
           ],
@@ -29,7 +29,7 @@
             },
             {
               "type": "TextBlock",
-              "text": "world",
+              "text": "${Message}",
               "wrap": true,
               "size": "Small",
               "weight": "Lighter",
