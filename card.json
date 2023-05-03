@@ -48,6 +48,11 @@
       "type": "Action.OpenUrl",
       "title": "Open in Jira",
       "url": "${url}"
+    },
+    {
+      "type": "Action.OpenUrl",
+      "title": "Open in Azure",
+      "url": "${url}"
     }
   ],
   "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
