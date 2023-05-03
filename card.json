@@ -1,0 +1,55 @@
+{
+  "type": "AdaptiveCard",
+  "body": [
+    {
+      "type": "ColumnSet",
+      "columns": [
+        {
+          "type": "Column",
+          "items": [
+            {
+              "type": "Image",
+              "url": "https://drone.github.io/drone-jira/jira.png",
+              "size": "small"
+            }
+          ],
+          "width": "auto"
+        },
+        {
+          "type": "Column",
+          "items": [
+            {
+              "type": "TextBlock",
+              "text": "Hello",
+              "wrap": true,
+              "size": "small",
+              "weight": "bolder",
+              "isSubtle": false,
+              "spacing": "small"
+            },
+            {
+              "type": "TextBlock",
+              "text": "world",
+              "wrap": true,
+              "size": "Small",
+              "weight": "Lighter",
+              "isSubtle": true,
+              "spacing": "Small"
+            }
+          ],
+          "width": "stretch"
+        }
+      ],
+      "style": "default"
+    },
+  ],
+  "actions": [
+    {
+      "type": "Action.OpenUrl",
+      "title": "Open in Jira",
+      "url": "${url}"
+    }
+  ],
+  "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+  "version": "1.4"
+}
