@@ -24,28 +24,7 @@
               "weight": "Lighter",
               "isSubtle": true,
               "spacing": "Small"
-            },
-            {
-              "type": "Column",
-              "items": [
-                {
-                  "type": "TextBlock",
-                  "text": "Lint report",
-                  "wrap": true,
-                  "size": "small",
-                  "weight": "bolder",
-                  "isSubtle": false,
-                  "spacing": "small"
-                },
-                {
-                  "type": "TextBlock",
-                  "text": "${lint_url}",
-                  "wrap": true,
-                  "size": "Small",
-                  "weight": "Lighter",
-                  "isSubtle": true,
-                  "spacing": "Small"
-                }
+            }
           ],
           "width": "stretch"
         }
