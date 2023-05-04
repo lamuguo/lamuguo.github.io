@@ -24,7 +24,28 @@
               "weight": "Lighter",
               "isSubtle": true,
               "spacing": "Small"
-            }
+            },
+            {
+              "type": "Column",
+              "items": [
+                {
+                  "type": "TextBlock",
+                  "text": "Lint report",
+                  "wrap": true,
+                  "size": "small",
+                  "weight": "bolder",
+                  "isSubtle": false,
+                  "spacing": "small"
+                },
+                {
+                  "type": "TextBlock",
+                  "text": "${lint_url}",
+                  "wrap": true,
+                  "size": "Small",
+                  "weight": "Lighter",
+                  "isSubtle": true,
+                  "spacing": "Small"
+                }
           ],
           "width": "stretch"
         }
@@ -35,8 +56,13 @@
   "actions": [
     {
       "type": "Action.OpenUrl",
-      "title": "Open report",
+      "title": "Coverage report",
       "url": "${cov_url}"
+    },
+    {
+      "type": "Action.OpenUrl",
+      "title": "Lint report",
+      "url": "${lint_url}"
     }
   ],
   "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
