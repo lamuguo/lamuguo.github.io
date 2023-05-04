@@ -52,7 +52,7 @@
     {
       "type": "Action.OpenUrl",
       "title": "Open in Azure",
-      "url": "${url}"
+      "url": "https://google.com"
     }
   ],
   "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
