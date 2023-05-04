@@ -52,7 +52,7 @@
     {
       "type": "Action.OpenUrl",
       "title": "Open in Azure",
-      "url": "https://google.com"
+      "url": "https://hub.docker.com/r/adminatomi/server"
     }
   ],
   "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
