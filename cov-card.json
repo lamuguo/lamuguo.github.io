@@ -18,7 +18,7 @@
             },
             {
               "type": "TextBlock",
-              "text": "${url}",
+              "text": "${cov_url}",
               "wrap": true,
               "size": "Small",
               "weight": "Lighter",
@@ -36,7 +36,7 @@
     {
       "type": "Action.OpenUrl",
       "title": "Open report",
-      "url": "${url}"
+      "url": "${cov_url}"
     }
   ],
   "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
