@@ -43,4 +43,17 @@
   
   
   
+  
+  
+  <entry>
+    <title>about</title>
+    <link href="/"/>
+    <url>/</url>
+    
+    <content type="html"><![CDATA[<p>just an empty about pae.</p>]]></content>
+    
+  </entry>
+  
+  
+  
 </search>
