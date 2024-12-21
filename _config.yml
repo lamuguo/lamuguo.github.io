@@ -105,3 +105,17 @@ deploy:
   repo: git@github.com:lamuguo/lamuguo.github.io.git
   branch: gh-pages
 
+### Additional appended contents.
+
+# Hexo RSS Feed Configuration
+feed:
+  # Generate atom feed
+  # type: atom
+
+  # Generate both atom and rss2 feeds
+  type:
+    - atom
+    - rss2
+  path:
+    - atom.xml
+    - rss2.xml
