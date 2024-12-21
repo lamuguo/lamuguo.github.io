@@ -3,13 +3,13 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
-subtitle: ''
-description: ''
-keywords:
-author: John Doe
+title: Zephyr Guo's Blog
+subtitle: Exploring the Intersection of Technology, Philosophy, and Creativity
+description: A personal blog by Zephyr Guo, delving into topics like software development, embedded engineering, digital innovation, and reflections on life and the universe.
+keywords: technology, philosophy, creativity, software, coding, innovation, Zephyr Guo, personal blog
+author: Zephyr Guo
 language: en
-timezone: ''
+timezone: America/Los_Angeles
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
