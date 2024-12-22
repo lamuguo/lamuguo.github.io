@@ -16,3 +16,5 @@ https://github.com/logicspark/awesome-vitepress-v1 这个可以参考下。
 
 ## Commerce
 感觉现在SSG / headless用来做支付还挺流行。这方面vitepress还是弱一些，但是Gatsby / Nuxt还是很流行的。以后可以想想怎么弄个网站，把购物、支付、donation、delivery都打通一遍。这样的东西还是很有用的。
+
+- [discussion with chatgpt](https://chatgpt.com/g/g-p-6766e06daa4081919452e7b8487f288a-homepage/c/6766e549-29d4-8001-8949-3e68b4d6fd46)
