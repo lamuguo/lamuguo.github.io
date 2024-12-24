@@ -19,22 +19,25 @@
   <meta name="author" content="Zephyr Guo">
   <meta name="keywords" content="technology, philosophy, creativity, software, coding, innovation, Zephyr Guo, personal blog">
   
-    <meta name="description" content="A personal blog by Zephyr Guo, delving into topics like software development, embedded engineering, digital innovation, and reflections on life and the universe.">
+    <meta name="description" content="Solar System 01Overview of a Solar System总体系统结构大概如上图，后面是每个模块的思路。 Solar Panels这个是generator的部分，目前太阳能板其实差别不大，而且就算不好，也可以换掉。作为DIY的话，一开始可以准备几种试试看，反正不好的就后院随便用用就好。可以先买些200W的板子小一点，然后确保技术差不多就行。 一块solar panel，一般">
 <meta property="og:type" content="article">
-<meta property="og:title" content="test2">
-<meta property="og:url" content="http://example.com/2024/12/21/test2/index.html">
+<meta property="og:title" content="solar-system-01">
+<meta property="og:url" content="http://example.com/2024/12/22/solar-system-01/index.html">
 <meta property="og:site_name" content="Zephyr Guo&#39;s Blog">
-<meta property="og:description" content="A personal blog by Zephyr Guo, delving into topics like software development, embedded engineering, digital innovation, and reflections on life and the universe.">
+<meta property="og:description" content="Solar System 01Overview of a Solar System总体系统结构大概如上图，后面是每个模块的思路。 Solar Panels这个是generator的部分，目前太阳能板其实差别不大，而且就算不好，也可以换掉。作为DIY的话，一开始可以准备几种试试看，反正不好的就后院随便用用就好。可以先买些200W的板子小一点，然后确保技术差不多就行。 一块solar panel，一般">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2024-12-21T03:37:43.000Z">
+<meta property="og:image" content="http://example.com/img/solar/solar-overview-01.png">
+<meta property="og:image" content="http://example.com/img/solar/solar-real-system.png">
+<meta property="article:published_time" content="2024-12-22T17:33:40.000Z">
 <meta property="article:modified_time" content="2024-12-24T15:24:13.707Z">
 <meta property="article:author" content="Zephyr Guo">
-<meta property="article:tag" content="technology, philosophy, creativity, software, coding, innovation, Zephyr Guo, personal blog">
+<meta property="article:tag" content="solar panel, solar system, solar">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="http://example.com/img/solar/solar-overview-01.png">
   
   
   
-  <title>test2 - Zephyr Guo&#39;s Blog</title>
+  <title>solar-system-01 - Zephyr Guo&#39;s Blog</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -239,7 +242,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="test2"></span>
+            <span id="subtitle" data-typed-text="solar-system-01"></span>
           
         </div>
 
@@ -250,8 +253,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2024-12-20 19:37" pubdate>
-          December 20, 2024 pm
+        <time datetime="2024-12-22 09:33" pubdate>
+          December 22, 2024 am
         </time>
       </span>
     
@@ -262,7 +265,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          0 words
+          598 words
         
       </span>
     
@@ -273,7 +276,7 @@
         
         
         
-          1 mins
+          5 mins
         
       </span>
     
@@ -310,12 +313,31 @@
       <div class="container nopadding-x-md" id="board-ctn">
         <div id="board">
           <article class="post-content mx-auto">
-            <h1 id="seo-header">test2</h1>
+            <h1 id="seo-header">solar-system-01</h1>
             
             
               <div class="markdown-body">
                 
-                
+                <h1 id="Solar-System-01"><a href="#Solar-System-01" class="headerlink" title="Solar System 01"></a>Solar System 01</h1><h2 id="Overview-of-a-Solar-System"><a href="#Overview-of-a-Solar-System" class="headerlink" title="Overview of a Solar System"></a>Overview of a Solar System</h2><p><img src="/img/solar/solar-overview-01.png" srcset="/img/loading.gif" lazyload alt="Solar Overview 1"><br>总体系统结构大概如上图，后面是每个模块的思路。</p>
+<h3 id="Solar-Panels"><a href="#Solar-Panels" class="headerlink" title="Solar Panels"></a>Solar Panels</h3><p>这个是generator的部分，目前太阳能板其实差别不大，而且就算不好，也可以换掉。作为DIY的话，一开始可以准备几种试试看，反正不好的就后院随便用用就好。可以先买些200W的板子小一点，然后确保技术差不多就行。</p>
+<p>一块solar panel，一般参数有这些：</p>
+<ul>
+<li>发电功率。譬如400W，200W这种。</li>
+<li>价格。不错的板子，400W现在也常常在$100左右，一般不会超过$150。</li>
+<li>转化效率。单晶板的话，一般在20%~21%之间。所以随便找个靠谱点对品牌买单晶板就够了，都不会有太大差别的。</li>
+<li>输出电压和电流。譬如37V x 13.8A这样。这个反而比较重要，因为这个关系到我们怎么接板子，串并联怎么做。</li>
+<li>板子大小。一般400W的大概是1m x 2m这样的。</li>
+<li>datasheet。一般正常的板子都有完整的datasheet的，里面可以看到更详细的参数。</li>
+<li>合格证标号。我好像还没查这个，不过这个应该也比较重要。</li>
+</ul>
+<p>所以，其实只要是一块合格的单晶板（关于单晶板和其它太阳能板的技术啥的，其实对DIY不太重要。DIY记住现在阶段买单晶板就够了，至于具体太阳能板技术，以后有时间我们再说），一般都是符合要求的。</p>
+<h3 id="MPPT"><a href="#MPPT" class="headerlink" title="MPPT"></a>MPPT</h3><p>这个主要是对不同时候调整太阳能板发电效率的技术。这个技术后面值的详细讨论，这里我们可以简单的先确认有个MPPT模块就可以。</p>
+<p>当然，现在MPPT一般集成在Inverter中，所以后面要换会稍微浪费一点。所以，我可能后面还是会仔细去看一下MPPT是什么技术，它跟PWM有什么差别之类。</p>
+<h3 id="Inverter"><a href="#Inverter" class="headerlink" title="Inverter"></a>Inverter</h3><p>这个是整个系统中最重要的部分。</p>
+<p>它的原理大致是这样的，它需要达成DC Input &#x3D;&gt; 50Hz AC Ouput的作用，它与整流器的功能刚好相反。</p>
+<h2 id="对于这样的需要关注的参数：-可接受输入电压-支持功率"><a href="#对于这样的需要关注的参数：-可接受输入电压-支持功率" class="headerlink" title="对于这样的需要关注的参数：- 可接受输入电压- 支持功率"></a>对于这样的需要关注的参数：<br>- 可接受输入电压<br>- 支持功率</h2><p>这里部分我参考的主要是这么个材料：<a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1wP4y1x7Fh/?spm_id_from=333.337.search-card.all.click">DIY光伏系统 选对充电控制器才是重点</a></p>
+<p><img src="/img/solar/solar-real-system.png" srcset="/img/loading.gif" lazyload alt="Solar Real System Example"></p>
+
                 
               </div>
             
@@ -323,6 +345,13 @@
             <div>
               <div class="post-metas my-3">
   
+  
+    <div class="post-meta">
+      <i class="iconfont icon-tags"></i>
+      
+        <a href="/tags/solar-panel-solar-system-solar/" class="print-no-link">#solar panel, solar system, solar</a>
+      
+    </div>
   
 </div>
 
@@ -332,8 +361,8 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>test2</div>
-      <div>http://example.com/2024/12/21/test2/</div>
+      <div>solar-system-01</div>
+      <div>http://example.com/2024/12/22/solar-system-01/</div>
     </div>
     <div class="license-meta">
       
@@ -345,7 +374,7 @@
       
         <div class="license-meta-item license-meta-date">
           <div>Posted on</div>
-          <div>December 20, 2024</div>
+          <div>December 22, 2024</div>
         </div>
       
       
@@ -377,9 +406,9 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2024/12/22/solar-system-01/" title="solar-system-01">
+                      <a href="/2024/12/24/hello-world/" title="Hello World">
                         <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">solar-system-01</span>
+                        <span class="hidden-mobile">Hello World</span>
                         <span class="visible-mobile">Previous</span>
                       </a>
                     
@@ -387,8 +416,8 @@
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2024/12/21/test/" title="test">
-                        <span class="hidden-mobile">test</span>
+                      <a href="/2024/12/21/test2/" title="test2">
+                        <span class="hidden-mobile">test2</span>
                         <span class="visible-mobile">Next</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
