@@ -12,7 +12,7 @@
 
 需要注意的参数是：
 - 400W左右的 1mx2m 板子，大概多少钱？ <$150
-- 转化率20%+
+- 转化率20%+ kasdf
 
 ### 可以有的选择
 - [Hyperion 400W](https://www.portable-sun.com/products/hyperion-400w-bifacial-solar-panel-black-up-to-500w-with-bifacial-gain/?gad_source=1&gclid=CjwKCAiA9vS6BhA9EiwAJpnXw4_F8R32Qgwqvkf90u5xYNBu4Qv3uvl2k-YHaTX-4v27fx1klHzQExoCXaQQAvD_BwE): 400W / $105 / 21.0% / 37V x 13.8A / 68in x 44.7in / [datasheet](https://cdn.shopify.com/s/files/1/0850/1801/8067/files/HY-DH108P8_390-410W-202110_short_cable_2_2.pdf?v=1715785945)
