@@ -9,14 +9,14 @@
     <atom:link href="http://example.com/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>A personal blog by Zephyr Guo, delving into topics like software development, embedded engineering, digital innovation, and reflections on life and the universe.</description>
-    <pubDate>Tue, 24 Dec 2024 15:24:13 GMT</pubDate>
+    <pubDate>Wed, 25 Dec 2024 03:58:28 GMT</pubDate>
     <generator>http://hexo.io/</generator>
     
     <item>
       <title>Hello World</title>
-      <link>http://example.com/2024/12/24/hello-world/</link>
-      <guid>http://example.com/2024/12/24/hello-world/</guid>
-      <pubDate>Tue, 24 Dec 2024 15:24:13 GMT</pubDate>
+      <link>http://example.com/2024/12/25/hello-world/</link>
+      <guid>http://example.com/2024/12/25/hello-world/</guid>
+      <pubDate>Wed, 25 Dec 2024 03:58:28 GMT</pubDate>
       
         
         
@@ -30,7 +30,7 @@
       
       
       
-      <comments>http://example.com/2024/12/24/hello-world/#disqus_thread</comments>
+      <comments>http://example.com/2024/12/25/hello-world/#disqus_thread</comments>
       
     </item>
     

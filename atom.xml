@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2024-12-24T15:24:13.707Z</updated>
+  <updated>2024-12-25T03:58:28.561Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -18,10 +18,10 @@
   
   <entry>
     <title>Hello World</title>
-    <link href="http://example.com/2024/12/24/hello-world/"/>
-    <id>http://example.com/2024/12/24/hello-world/</id>
-    <published>2024-12-24T15:24:13.707Z</published>
-    <updated>2024-12-24T15:24:13.707Z</updated>
+    <link href="http://example.com/2024/12/25/hello-world/"/>
+    <id>http://example.com/2024/12/25/hello-world/</id>
+    <published>2024-12-25T03:58:28.561Z</published>
+    <updated>2024-12-25T03:58:28.561Z</updated>
     
     <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo new <span class="hljs-string">&quot;My New Post&quot;</span><br></code></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo server<br></code></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo generate<br></code></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo deploy<br></code></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
     
@@ -41,7 +41,7 @@
     <link href="http://example.com/2024/12/22/solar-system-01/"/>
     <id>http://example.com/2024/12/22/solar-system-01/</id>
     <published>2024-12-22T17:33:40.000Z</published>
-    <updated>2024-12-24T15:24:13.707Z</updated>
+    <updated>2024-12-25T03:58:28.561Z</updated>
     
     <content type="html"><![CDATA[<h1 id="Solar-System-01"><a href="#Solar-System-01" class="headerlink" title="Solar System 01"></a>Solar System 01</h1><h2 id="Overview-of-a-Solar-System"><a href="#Overview-of-a-Solar-System" class="headerlink" title="Overview of a Solar System"></a>Overview of a Solar System</h2><p><img src="/img/solar/solar-overview-01.png" alt="Solar Overview 1"><br>总体系统结构大概如上图，后面是每个模块的思路。</p><h3 id="Solar-Panels"><a href="#Solar-Panels" class="headerlink" title="Solar Panels"></a>Solar Panels</h3><p>这个是generator的部分，目前太阳能板其实差别不大，而且就算不好，也可以换掉。作为DIY的话，一开始可以准备几种试试看，反正不好的就后院随便用用就好。可以先买些200W的板子小一点，然后确保技术差不多就行。</p><p>一块solar panel，一般参数有这些：</p><ul><li>发电功率。譬如400W，200W这种。</li><li>价格。不错的板子，400W现在也常常在$100左右，一般不会超过$150。</li><li>转化效率。单晶板的话，一般在20%~21%之间。所以随便找个靠谱点对品牌买单晶板就够了，都不会有太大差别的。</li><li>输出电压和电流。譬如37V x 13.8A这样。这个反而比较重要，因为这个关系到我们怎么接板子，串并联怎么做。</li><li>板子大小。一般400W的大概是1m x 2m这样的。</li><li>datasheet。一般正常的板子都有完整的datasheet的，里面可以看到更详细的参数。</li><li>合格证标号。我好像还没查这个，不过这个应该也比较重要。</li></ul><p>所以，其实只要是一块合格的单晶板（关于单晶板和其它太阳能板的技术啥的，其实对DIY不太重要。DIY记住现在阶段买单晶板就够了，至于具体太阳能板技术，以后有时间我们再说），一般都是符合要求的。</p><h3 id="MPPT"><a href="#MPPT" class="headerlink" title="MPPT"></a>MPPT</h3><p>这个主要是对不同时候调整太阳能板发电效率的技术。这个技术后面值的详细讨论，这里我们可以简单的先确认有个MPPT模块就可以。</p><p>当然，现在MPPT一般集成在Inverter中，所以后面要换会稍微浪费一点。所以，我可能后面还是会仔细去看一下MPPT是什么技术，它跟PWM有什么差别之类。</p><h3 id="Inverter"><a href="#Inverter" class="headerlink" title="Inverter"></a>Inverter</h3><p>这个是整个系统中最重要的部分。</p><p>它的原理大致是这样的，它需要达成DC Input &#x3D;&gt; 50Hz AC Ouput的作用，它与整流器的功能刚好相反。</p><h2 id="对于这样的需要关注的参数：-可接受输入电压-支持功率"><a href="#对于这样的需要关注的参数：-可接受输入电压-支持功率" class="headerlink" title="对于这样的需要关注的参数：- 可接受输入电压- 支持功率"></a>对于这样的需要关注的参数：<br>- 可接受输入电压<br>- 支持功率</h2><p>这里部分我参考的主要是这么个材料：<a href="https://www.bilibili.com/video/BV1wP4y1x7Fh/?spm_id_from=333.337.search-card.all.click">DIY光伏系统 选对充电控制器才是重点</a></p><p><img src="/img/solar/solar-real-system.png" alt="Solar Real System Example"></p>]]></content>
     
@@ -63,7 +63,7 @@
     <link href="http://example.com/2024/12/21/test2/"/>
     <id>http://example.com/2024/12/21/test2/</id>
     <published>2024-12-21T03:37:43.000Z</published>
-    <updated>2024-12-24T15:24:13.707Z</updated>
+    <updated>2024-12-25T03:58:28.561Z</updated>
     
     
     
@@ -76,7 +76,7 @@
     <link href="http://example.com/2024/12/21/test/"/>
     <id>http://example.com/2024/12/21/test/</id>
     <published>2024-12-21T03:27:31.000Z</published>
-    <updated>2024-12-24T15:24:13.707Z</updated>
+    <updated>2024-12-25T03:58:28.561Z</updated>
     
     
     
